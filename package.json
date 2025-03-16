@@ -1,0 +1,20 @@
+{
+  "name": "awesome_faq",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jiwon-lieb/awesome_faq.git",
+  "author": "Jiwon KWak <jwkwak1002@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "latest"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
