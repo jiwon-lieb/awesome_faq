@@ -1,26 +1,50 @@
 {% extends "base.njk" %}
 
 {% block content %}
-<div class="max-w-3xl mx-auto text-center px-6 py-12">
-  <h1 class="text-5xl font-extrabold text-[#3B434B] mb-6">✨ Welcome to <span class="text-[#FF69B4]">Awesome FAQ</span> ✨</h1>
-  <p class="text-lg text-gray-700 mb-8">Your sleek, no-database, easy-maintenance FAQ system. Markdown-powered and baddie-approved.</p>
+<div class="max-w-[1000px] mx-auto text-center px-6 py-12">
+  <h1 class="text-5xl font-extrabold text-white drop-shadow-lg mb-6">✨ Welcome to <span class="text-[#FF69B4]">Awesome FAQ</span> ✨</h1>
+  <p class="text-lg text-gray-600 mb-8">Your sleek, no-database, easy-maintenance FAQ system. <br> Markdown-powered and customizable.</p>
 
-  <div class="mt-10 space-y-6">
-    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4]">
-      <h2 class="text-2xl font-bold text-[#1A2526]">🚀 Key Features</h2>
-      <ul class="list-disc list-inside text-gray-600 mt-2">
-        <li>📝 Simple Markdown Editing</li>
-        <li>⚡ Fast & Lightweight</li>
-        <li>🎯 No Database Required</li>
-        <li>💡 Easy to Maintain</li>
-      </ul>
+  <!-- Key Features -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+    <!-- Feature 1 -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
+      <h2 class="text-xl font-bold text-[#FF1493] flex items-center"><span>📝 Markdown Simplicity</span></h2>
+      <p class="text-gray-600 mt-2 text-sm">
+        {{ "**Write and manage FAQs in Markdown** making content updates effortless without dealing with databases." | markdown | safe }}
+      </p>
+    </div>
+    
+    <!-- Feature 2 -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
+      <h2 class="text-xl font-bold text-[#FF1493] flex items-center"><span>⚡ Fast & Lightweight</span></h2>
+      <p class="text-gray-600 mt-2 text-sm">
+        {{ "**Optimized for speed & efficiency** using static files instead of complex backends—perfect for quick deployments." | markdown | safe }}
+      </p>
     </div>
 
-    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4]">
-      <h2 class="text-2xl font-bold text-[#1A2526]">📖 Get Started</h2>
-      <p class="text-gray-600">Browse FAQs or contribute your own.</p>
-      <a href="/faq.html" class="mt-4 inline-block px-6 py-3 bg-[#FF69B4] text-white font-semibold rounded-full shadow-md hover:bg-[#FF1493] transition">Explore FAQ</a>
+    <!-- Feature 3 -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
+      <h2 class="text-xl font-bold text-[#FF1493]">🎯 No Database Required</h2>
+      <p class="text-gray-600 mt-2 text-sm">
+        {{ "**Your FAQs are just plain files—no database management, no migrations, no unexpected data loss.**" | markdown | safe }}
+      </p>
     </div>
+
+    <!-- Feature 4 -->
+    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
+      <h2 class="text-xl font-bold text-[#FF1493]">💡 Easy Maintenance</h2>
+      <p class="text-gray-600 mt-2 text-sm">
+        {{ "**Auto-updates FAQs from Markdown to structured JSON.** Developers & non-tech users alike can edit with ease." | markdown | safe }}
+      </p>
+    </div>
+  </div>
+
+  <!-- Get Started Button -->
+  <div class="mt-12">
+    <a href="/faq.html" class="px-6 py-3 bg-[#FF69B4] text-white font-semibold rounded-full shadow-md hover:bg-[#FF1493] transition">
+      🚀 Explore FAQs
+    </a>
   </div>
 </div>
 {% endblock %}
