@@ -1,49 +1,15 @@
 {% extends "base.njk" %}
 
 {% block content %}
-<div class="max-w-[1000px] mx-auto text-center px-6 py-12">
-  <h1 class="text-5xl font-extrabold text-white drop-shadow-lg mb-6">✨ Welcome to <span class="text-[#FF69B4]">Awesome FAQ</span> ✨</h1>
-  <p class="text-lg text-gray-600 mb-8">Your sleek, no-database, easy-maintenance FAQ system. <br> Markdown-powered and customizable.</p>
-
-  <!-- Key Features -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
-    <!-- Feature 1 -->
-    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
-      <h2 class="text-xl font-bold text-[#FF1493] flex items-center"><span>📝 Markdown Simplicity</span></h2>
-      <p class="text-gray-600 mt-2 text-sm">
-        {{ "**Write and manage FAQs in Markdown** making content updates effortless without dealing with databases." | markdown | safe }}
-      </p>
-    </div>
-    
-    <!-- Feature 2 -->
-    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
-      <h2 class="text-xl font-bold text-[#FF1493] flex items-center"><span>⚡ Fast & Lightweight</span></h2>
-      <p class="text-gray-600 mt-2 text-sm">
-        {{ "**Optimized for speed & efficiency** using static files instead of complex backends—perfect for quick deployments." | markdown | safe }}
-      </p>
+<div class="text-center max-w-3xl mx-auto px-6 py-12">
+    <h1 class="text-4xl font-extrabold text-[#3B434B] mb-4">Welcome to Awesome FAQ</h1>
+    <div class="text-lg text-[#4A4A4A] leading-relaxed">
+        {{ "A **lightweight**, **no-database**, easy-to-maintain FAQ system. Manage FAQs effortlessly with simple **Markdown** files." | markdown | safe }}
     </div>
 
-    <!-- Feature 3 -->
-    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
-      <h2 class="text-xl font-bold text-[#FF1493]">🎯 No Database Required</h2>
-      <p class="text-gray-600 mt-2 text-sm">
-        {{ "**Your FAQs are just plain files—no database management, no migrations, no unexpected data loss.**" | markdown | safe }}
-      </p>
-    </div>
-
-    <!-- Feature 4 -->
-    <div class="p-6 bg-white shadow-lg rounded-2xl border border-[#FF69B4] text-left">
-      <h2 class="text-xl font-bold text-[#FF1493]">💡 Easy Maintenance</h2>
-      <p class="text-gray-600 mt-2 text-sm">
-        {{ "**Auto-updates FAQs from Markdown to structured JSON.** Developers & non-tech users alike can edit with ease." | markdown | safe }}
-      </p>
-    </div>
-  </div>
-
-  <!-- Get Started Button -->
-  <!-- 🩷 Buttons Section -->
+    <!-- 🩷 Buttons Section -->
     <div class="mt-8 flex justify-center space-x-4">
-        <a href="https://github.com/jiwon-lieb/faq_md" target="_blank"
+        <a href="https://github.com/jiwon-lieb/awesome_faq" target="_blank"
            class="btn inline-block bg-gradient-to-r from-[#FF99CC] to-[#FF66B2] text-white font-semibold py-3 px-6 rounded-full shadow-md transform hover:scale-105 transition-all">
             ⭐ GitHub
         </a>
@@ -52,5 +18,64 @@
             🦋 Sample Animal FAQ
         </a>
     </div>
+
+    <!-- 🌟 Key Features -->
+    <section id="key-features" class="mt-16">
+        <h2 class="text-3xl font-extrabold text-[#3B434B] mb-6">🌟 Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Feature Cards -->
+            <div class="bg-[#FFEEF5] border border-[#FF99CC] p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#3B434B]">🚀 Lightweight</h3>
+                <p class="text-[#4A4A4A]">{{ "No databases, no complex setup. Just **Markdown** & **Eleventy**." | markdown | safe }}</p>
+            </div>
+            <div class="bg-[#FFEEF5] border border-[#FF99CC] p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#3B434B]">🛠️ Easy Maintenance</h3>
+                <p class="text-[#4A4A4A]">{{ "Update your FAQ by simply adding or editing **Markdown** files." | markdown | safe }}</p>
+            </div>
+            <div class="bg-[#FFEEF5] border border-[#FF99CC] p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#3B434B]">📖 Markdown-Based</h3>
+                <p class="text-[#4A4A4A]">{{ "Write FAQs in **Markdown**—Eleventy will convert them to **HTML**." | markdown | safe }}</p>
+            </div>
+            <div class="bg-[#FFEEF5] border border-[#FF99CC] p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#3B434B]">🌐 Open Source</h3>
+                <p class="text-[#4A4A4A]">{{ "Customize, extend, and contribute to the project on **[GitHub](https://github.com/jiwon-lieb/awesome_faq)**." | markdown | safe }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🚀 Getting Started Section -->
+    <section id="getting-started" class="mt-16">
+        <h2 class="text-3xl font-extrabold text-[#3B434B] mb-6">🚀 Getting Started</h2>
+        <p class="text-lg text-[#4A4A4A] leading-relaxed">
+            {{ "Follow these steps to set up your own **Awesome FAQ**." | markdown | safe }}
+        </p>
+
+        <div class="mt-6 text-left bg-[#FFF5F9] rounded-lg shadow-md p-6 border-l-4 border-[#FF99CC]">
+            <h3 class="text-2xl font-bold text-[#3B434B] mb-3">1️⃣ Installation</h3>
+            <pre class="bg-[#3B434B] text-white p-4 rounded-lg text-sm overflow-x-auto"><code>
+# Clone the repository
+git clone https://github.com/jiwon-lieb/awesome_faq.git
+cd awesome_faq
+
+# Install dependencies
+yarn install
+            </code></pre>
+
+            <h3 class="text-2xl font-bold text-[#3B434B] mt-6 mb-3">2️⃣ Build & Run</h3>
+            <pre class="bg-[#3B434B] text-white p-4 rounded-lg text-sm overflow-x-auto"><code>
+# Build the project
+yarn build
+
+# Start local development server
+yarn start
+            </code></pre>
+
+            <h3 class="text-2xl font-bold text-[#3B434B] mt-6 mb-3">3️⃣ Add Your FAQs</h3>
+            <p class="text-[#3B434B] leading-relaxed">
+                {{ "Add your Markdown FAQ files to the `/faq` directory.  
+                Eleventy will automatically generate an FAQ page for you." | markdown | safe }}
+            </p>
+        </div>
+    </section>
 </div>
 {% endblock %}
